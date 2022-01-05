@@ -6,7 +6,7 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 
-const FuncModalEditFood = ({isOpen, setIsOpen, editingFood, handleUpdateFood}) => {
+const ModalEditFood = ({isOpen, setIsOpen, editingFood, handleUpdateFood}) => {
 
     const handleSubmit = (data) => handleUpdateFood(data)
 
@@ -34,4 +34,4 @@ const FuncModalEditFood = ({isOpen, setIsOpen, editingFood, handleUpdateFood}) =
     )
 }
 
-export default FuncModalEditFood
+export default ModalEditFood
