@@ -1,6 +1,13 @@
+import { ReactNode } from 'react';
 import ReactModal from 'react-modal';
 
-const FuncModal = ({children, setIsOpen, isOpen}) => {
+interface ModalProps {
+    isOpen: boolean
+    setIsOpen: () => void
+    children: ReactNode
+}
+
+const Modal = ({children, setIsOpen, isOpen}: ModalProps) => {
     return (
         <ReactModal
             shouldCloseOnOverlayClick={!false}
@@ -31,4 +38,4 @@ const FuncModal = ({children, setIsOpen, isOpen}) => {
     )
 }
 
-export default FuncModal
+export default Modal
