@@ -27,6 +27,7 @@ const Food = ({food, handleDelete, handleEditFood}) => {
                         type="button"
                         className="icon"
                         data-testid={`edit-food-${food.id}`}
+                        onClick={() => handleEditFood(food.id)}
                     >
                         <FiEdit3 size={20} />
                     </button>
