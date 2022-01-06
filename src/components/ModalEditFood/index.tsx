@@ -6,12 +6,7 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 
-interface Food {
-    name: string
-    description: string
-    image: string
-    price: number
-}
+import { Food } from '../../common/interfaces'
 
 interface ModalEditFoodProps {
     isOpen: boolean

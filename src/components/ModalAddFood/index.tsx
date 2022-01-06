@@ -5,12 +5,7 @@ import Modal from '../Modal';
 import Input from '../Input';
 import { useRef } from 'react';
 
-interface Food {
-    name: string
-    description: string
-    image: string
-    price: number
-}
+import { Food } from '../../common/interfaces'
 
 interface ModalAddFoodProps {
     setIsOpen: () => void
@@ -18,7 +13,7 @@ interface ModalAddFoodProps {
     handleAddFood: (arg: Food) => void
 }
 
-const ModalAddFood = ({setIsOpen, isOpen, handleAddFood}: ModalAddFoodProps) => {
+const ModalAddFood = ({ setIsOpen, isOpen, handleAddFood }: ModalAddFoodProps) => {
 
     const formRef = useRef(null)
 
