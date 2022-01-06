@@ -8,9 +8,12 @@ import Input from '../Input';
 
 const ModalEditFood = ({isOpen, setIsOpen, editingFood, handleUpdateFood}) => {
 
-    const handleSubmit = (data) => handleUpdateFood(data)
+    const handleSubmit = async (data) => {
+        handleUpdateFood(data)
+        setIsOpen()
+    }
 
-    const formRef = useRef()
+    const formRef = useRef(null)
 
     return (
         <Modal isOpen={isOpen} setIsOpen={setIsOpen}>

@@ -17,10 +17,10 @@
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
     },
     {
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
-      "name": "Macarrão Incrível",
-      "price": "90,00",
-      "description": "muuuuito bom",
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
+      "name": "Macarrão inc",
+      "price": "29,90",
+      "description": "Melhor macarrao do mundo!",
       "available": true,
       "id": 4
     }
