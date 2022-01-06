@@ -5,11 +5,17 @@ import Modal from '../Modal';
 import Input from '../Input';
 import { useRef } from 'react';
 
-const ModalAddFood = ({setIsOpen, isOpen, handleAddFood}) => {
+interface ModalAddFoodProps {
+    setIsOpen: () => void
+    isOpen: boolean
+    handleAddFood: (arg: {}) => void
+}
+
+const ModalAddFood = ({setIsOpen, isOpen, handleAddFood}: ModalAddFoodProps) => {
 
     const formRef = useRef()
 
-    const handleSubmit = async (data) => {
+    const handleSubmit = async (data: {}) => {
         handleAddFood(data)
         setIsOpen()
     }
