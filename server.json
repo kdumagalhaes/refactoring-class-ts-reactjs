@@ -15,6 +15,14 @@
       "price": "25.90",
       "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "name": "Macarrão Incrível",
+      "price": "90,00",
+      "description": "muuuuito bom",
+      "available": true,
+      "id": 4
     }
   ]
 }
