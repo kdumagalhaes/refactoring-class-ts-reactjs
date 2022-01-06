@@ -4,7 +4,19 @@ import {useState} from 'react'
 import { Container } from './styles';
 import api from '../../services/api';
 
-const Food = ({food, handleDelete, handleEditFood}) => {
+interface FoodProps {
+    food: {
+        id: number
+        name: string
+        description: string
+        image: string
+        price: number
+    }
+    handleDelete: (arg: {}) => void
+    handleEditFood: (arg: {}) => void
+}
+
+const Food = ({food, handleDelete, handleEditFood}: FoodProps) => {
 
     const [isAvailable, setAvailability] = useState(true)
 
