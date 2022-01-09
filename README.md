@@ -20,6 +20,7 @@
   <a href="#memo-license">License</a>
 </p>
 
+<img alt="GoRestaurant Screen Capture" src="src/assets/screen-capture.webp">
 
 ## :rocket: Technologies
 
